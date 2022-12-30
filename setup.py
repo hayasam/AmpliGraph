@@ -35,7 +35,7 @@ setup_params = dict(name='ampligraph',
                         'networkx>=2.3',
                         'flake8>=3.7.7',
                         'setuptools>=36',
-                         'protobuf'==3.20.*,
+                         'protobuf==3.20.*',
                     ])
 if __name__ == '__main__':
     setup(**setup_params)
