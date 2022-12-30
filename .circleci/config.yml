@@ -19,8 +19,6 @@
     name: Install package
     command: |
       . venv/bin/activate
-      pip install --upgrade pip
-      pip install --upgrade 
       venv/bin/python3 -m pip install tensorflow==1.15.5
       venv/bin/python3 -m pip install .
 
@@ -50,6 +48,8 @@ jobs:
         name: Pip check
         command: |
           . venv/bin/activate
+          venv/bin/python3 -m pip install --upgrade pip
+          venv/bin/python3 -m pip install --upgrade 
           venv/bin/python3 -m pip check
 
   test:
